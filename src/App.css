@@ -1,0 +1,112 @@
+.para1>ul{
+   display: flex;
+   list-style: none;
+   float: right;
+   padding: 0px 10px ;
+}
+.para1{
+  background-color:white;
+  display:flow-root;
+  border-bottom: 3px solid rgb(70, 66, 66);
+}
+.para1>ul>li{
+  margin-left: 39px;
+}
+.circle{
+  /* border:1px solid black; */
+  border-radius: 50%;
+  height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+  background: #dcd2d2;  
+  text-align: center;
+}
+.blue_border{
+  /* border: 1px solid rgb(219, 13, 13); */
+  color: #ccc;
+  font-weight: bold;
+  background-color: #008060;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 6px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.Rankedpoll>table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Rankedpoll>td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.Rankedpoll>tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.PollSubmit{
+  display: inline-grid;
+  border: 1px solid black;
+  background: #008060;
+  color: white;
+  text-align: center;
+}
+.option{
+  text-align: center;
+}
